@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(243 237 229);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #000000; */
+}
+
+/* Navbar */
+.header{
+    color: white;
+    background-color: #000000;
+    height: 65px;
+}
+
+.brand{
+    display: inline-block;
+    width:fit-content;
+    height:fit-content;
+    border: 2px solid white;
+    text-align: center;
+    margin: 7px 10px;
+    padding: 0 3px;
+    cursor: pointer;
+}
+#first{
+    font-size: 24px;
+}
+#last{
+    font-size: 16px;
+}
+
+
+.nav-menu{
+    display: inline-block;  
+    margin: 15px 15px;
+}
+.nav-menu ul{
+    list-style-type: none;
+}
+.nav-menu ul li{
+    display: inline;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-left: 20px;
+}
+.nav-menu ul li a:hover{
+    color:#dae1e1;
+}
+
+
+.actions{
+    float: right;
+    margin: 9px;
+    cursor: pointer;
+}
+.actions:hover{
+    background-color: #1f2222b0;
+}
+
+
+h3{
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
+    color:rgb(46, 43, 7);
+}
+
+/* content  */
+.container{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.content{
+    background-color: white;
+    width: fit-content;
+    margin: 30px auto;
+    box-shadow:  8px 8px 30px rgba(15, 16, 17, 0.2);
+    cursor: pointer;
+}
+
+.content-img{
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.content-img img{
+   width: 200px;
+   height: 160px;
+}
+
+.anotherinfo{
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.anotherinfo .menu{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .nav-menu{
+        display: inline-block;  
+        margin: 19px 19px;
+    }
+
+    .nav-menu ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    
+    h3{
+        font-size: 28px;
+        margin-top: 25px;
+        text-align: center;
+        color:rgb(46, 43, 7);
+    }
+
+    .content-img img{
+        width: 160px;
+        height: 120px;
+    }
+    
+    .anotherinfo .menu{
+        font-size: 10px;
+        font-weight: bolder;
+    }
+}
