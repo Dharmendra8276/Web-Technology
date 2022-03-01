@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#EDF1F4 1%, #2B3B5F 90%);
+}
+
+.container {
+    width: 100%;
+}
+
+.sea-img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.boat-img {
+    display: flex;
+    width: 220px;
+    margin-top: -200px;
+    position: relative;
+    animation: boat 5s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes boat {
+    100% {
+        transform: translateX(1400px);
+    }
+    0% {
+        transform: translateX(0px);
+    }    
+}
